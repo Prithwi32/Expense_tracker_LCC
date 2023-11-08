@@ -6,7 +6,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <h2>Money Manager</h2>
       <div className="profileArea">
-        <img src="" alt="no image" />
+        <img src="/src/assets/profile.png"  width="90" alt="no image" />
       </div>
       <div className="navButtons">
         <Link id="dashboardBtn" className="nav" to={"/dashboard"}>
@@ -25,7 +25,7 @@ const Sidebar = () => {
           Transactions
         </Link>
 
-        <Link id="PofileBtn" className="nav" to={"/profile"}>
+        <Link id="ProfileBtn" className="nav" to={"/profile"}>
           Profile
         </Link>
       </div>
