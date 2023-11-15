@@ -1,0 +1,196 @@
+.dashboard {
+  width: 82%;
+  padding: 1vw 1.2vw 1vw 1vw;
+  margin-left: 18%;
+}
+.m-primary {
+  margin: 2vw 0;
+}
+.m-secondary {
+  margin: 1vw 0;
+}
+/* heading and new transaction button */
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+.head button {
+  height: 3vw;
+  width: 12vw;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.head button:hover {
+  background-color: var(--hover-primary);
+}
+.dashboardInfo {
+  width: 100%;
+}
+
+/* the outer box */
+.bar-overview-latest {
+  display: flex;
+  justify-content: space-between;
+  height: max-content;
+}
+.overview {
+  display: flex;
+  justify-content: space-between;
+  /* width: 95%; */
+}
+.overviewInfo {
+  width: 22%;
+  height: 5vw;
+  display: flex;
+
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.overviewInfo p {
+  font-size: small;
+}
+.income {
+  background-color: rgb(212, 255, 212);
+  /* border: 1px solid green; */
+}
+.income h2 {
+  color: #28ab28;
+}
+
+.expenses {
+  background-color: #ffdfdf;
+  /* border: 1px solid red; */
+}
+.expenses h2 {
+  color: #cd2c2c;
+}
+
+.balance {
+  background-color: rgb(234, 235, 255);
+}
+.balance h2 {
+  color: #3d45d2;
+}
+
+.totalT {
+  background-color: rgb(255, 245, 227);
+}
+.totalT h2 {
+  color: #e2a636;
+}
+.overviewInfo h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* Bar Graph */
+.bar-overview {
+  width: 60%;
+
+  height: 35vw;
+}
+.barChart {
+  /* width: 60vw; */
+  padding: 1vw 1vw 1vw 0vw;
+  height: 27.7vw;
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+}
+/* Latest Transactions */
+.latestTransactions-section {
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+  width: 39%;
+  height: 34.6vw;
+}
+.latestTransactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30.5vw;
+  overflow: scroll;
+}
+.latestTransactions::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single Transaction details */
+.trans {
+  width: 92%;
+  height: 3vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5vw 0;
+  /* border-top: 1px solid grey; */
+}
+.transactionInfo {
+  display: flex;
+
+  align-items: center;
+}
+.nameAndTime {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 1vw;
+}
+.transactionTime {
+  font-size: small;
+  color: rgb(132, 132, 132);
+}
+.latestTransactions-section h3 {
+  margin: 0.8vw 1vw;
+  font-weight: 600;
+}
+.transactionIcon {
+  /* margin: 0.5vw 1vw; */
+  border: 1px solid var(--boundary-color);
+  padding: 0.1vw;
+  border-radius: 50%;
+}
+.transactionAmt {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+/* PieCharts */
+.pieChart {
+  display: flex;
+}
+
+#pieChart1 {
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+  margin: 0.8vw 0.8vw 0.8vw 0;
+}
+.pieChart h5 {
+  margin: 0.3vw;
+}
+#pieChart2 {
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+  margin: 0.8vw 0.8vw 0.8vw 0;
+}
+#pieChart3 {
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+  margin: 0.8vw 0.8vw 0.8vw 0;
+}
+.graphs {
+  display: flex;
+}
+.areaGraph {
+  /* font-size: 1vw; */
+  border: 1px solid var(--boundary-color);
+  border-radius: 10px;
+  margin: 0.8vw 0.8vw 0.8vw 0;
+}

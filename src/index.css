@@ -12,9 +12,14 @@
   /* -webkit-text-size-adjust: 100%; */
   --primary-color: rgb(93, 135, 255);
   --secondary-color: rgb(73, 190, 255);
+  --boundary-color: rgb(203, 203, 203);
   color: rgb(42, 53, 71);
+  --hover-primary: rgb(75, 123, 255);
 }
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 a {
   text-decoration: none;
   /* font-weight: 500; */
@@ -29,8 +34,6 @@ body,
 html {
   margin: 0;
   padding: 0;
-  /* display: flex; */
-  /* min-height: 100vh; */
 }
 
 h1 {
@@ -49,9 +52,6 @@ h1 {
   cursor: pointer;
   transition: border-color 0.25s;
 } */
-button:hover {
-  border-color: #646cff;
-}
 
 /* @media (prefers-color-scheme: light) { */
 :root {
