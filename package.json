@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "flat-color-icons": "^1.1.0",
+    "bootstrap": "^5.2.3",
     "react": "^18.2.0",
     "react-date-picker": "^10.5.2",
     "react-dom": "^18.2.0",

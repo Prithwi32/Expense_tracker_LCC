@@ -27,5 +27,5 @@ Submit the PR.
 
 
 # Final Vision/Guiding Designs of the project
--These are designs to help visualise and guide the development of the project. The final version of the project may or may not look like this. Creative freedom is encouraged.
+-These are designs to help visualize and guide the development of the project. The final version of the project may or may not look like this. Creative freedom is encouraged.
 -Click [here](https://www.figma.com/file/9ioOuUWv6N18btDjQrE3AR/Expense_Tracker?type=design&node-id=0%3A1&mode=design&t=fJ9j4KzVjMSAThhV-1) for the UI design and prototype of the project.

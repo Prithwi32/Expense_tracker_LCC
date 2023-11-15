@@ -29,7 +29,7 @@ const Sidebar = () => {
           Transactions
         </Link>
 
-        <Link id="PofileBtn" className="nav" to={"/profile"}>
+        <Link id="ProfileBtn" className="nav" to={"/profile"}>
           Profile
         </Link>
       </div>
