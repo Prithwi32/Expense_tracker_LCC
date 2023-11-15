@@ -1,12 +1,16 @@
 import "./sidebar.css";
 import { Link } from "react-router-dom";
-
+import { FcCurrencyExchange } from "react-icons/fc";
+import profile from "../../assets/profile.png";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <h2>Money Manager</h2>
+      <div className="websiteNameAndLogo">
+        <FcCurrencyExchange size="3vw" />
+        <h2>Money Manager</h2>
+      </div>
       <div className="profileArea">
-        <img src="" alt="no image" />
+        <img src={profile} alt="" />
       </div>
       <div className="navButtons">
         <Link id="dashboardBtn" className="nav" to={"/dashboard"}>
