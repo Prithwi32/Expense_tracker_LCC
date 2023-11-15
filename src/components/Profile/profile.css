@@ -1,17 +1,6 @@
-:root{
-    --bg-color: #338EE2;
-    --color: rgb(211, 237, 242);
-}
-* {
-    margin: 0;
-    padding: 0
-}
-
-body {
-    background-color: #f7f7f7
-}
-
 .card {
+    margin:12%;
+    margin-left: 22%;
     width: 35vw;
     height: 80vh;
     /* background-color: var(--secondary-color); */
@@ -31,9 +20,10 @@ body {
     cursor: pointer;
 }
 
-.btn {
+.btn-bank {
     height: 140px;
     width: 140px;
+    border: none;
     border-radius: 50%
 }
 
@@ -62,7 +52,7 @@ body {
 }
 
 .bank-container .desc h5{
-    margin-top: 25px;
+    margin-top: 35px;
     font-size:20px;
 }
 .bank-container .desc p{

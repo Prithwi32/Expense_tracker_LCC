@@ -10,8 +10,8 @@ const Profile = () => {
           <div className="card p-4">
             <div className=" image d-flex flex-column justify-content-center align-items-center">
               {/* profile-img, name, email */}
-              <button className="btn profile-bg">
-                <img src="/src/assets/user.png" height="90" width="90" />
+              <button className="btn-bank profile-bg">
+                <img src="/src/assets/user.png" width="100" height="90" />
               </button>{" "}
               <span className="name m-3">User Name</span>
               <span className="email-id m-1">Email Address</span>
@@ -55,4 +55,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
