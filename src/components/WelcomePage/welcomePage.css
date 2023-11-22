@@ -1,0 +1,78 @@
+.box{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(234, 238, 252);
+}
+
+.box1{
+margin-left: 8%;
+display: flex;
+flex-direction: column;
+}
+
+.homeImg{
+position: absolute;
+bottom: 0;
+right: 8%;
+/* right: 0; */
+width: 500px;
+}
+
+@media only screen and (max-width : 1100px) {
+    .homeImg{
+        right: 4%;
+        width:48%;
+    }
+
+}
+.home-heading{
+font-size: 52px;
+padding: 60px;
+text-align: center;
+/* color: rgb(56, 167, 242); */
+color: var(--bg-color);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.box1 p{
+    margin-left: 10%;
+    padding: 10px;
+    font-size: 42px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    color:  rgb(70, 111, 177);
+}
+
+/* .box1 p:nth-child(2){
+    margin-left: 10%;
+}
+
+.box1 p:nth-child(3){
+    margin-left: 16%;
+} */
+
+.box1 button{
+    margin-left: 14%;
+    margin-top: 50px;
+    width: 200px;
+    font-size: 20px;
+}
+
+.box1 button a{
+    text-decoration: none;
+    color: var(--color);
+}
+
+.foot{
+    margin-left: 11%;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(70, 111, 177);
+    display: flex;
+}
+
+.foot a{
+    text-decoration: none;
+    margin-left: 8px;
+}
