@@ -1,25 +1,14 @@
-:root {
-  /* --bg-color: #338ee2; */
-  /* --color: rgb(211, 237, 242); */
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  /* background-color: #f7f7f7; */
-}
-
 .card {
-  width: 35vw;
-  height: 80vh;
-  /* background-color: var(--secondary-color); */
-  background-color: rgb(176, 216, 237);
-  border: none;
-  border-radius: 25px;
-  transition: all ease-in-out 0.3s;
-  color: var(--primary-color);
+    margin:12%;
+    margin-left: 22%;
+    width: 35vw;
+    height: 80vh;
+    /* background-color: var(--secondary-color); */
+    background-color: rgb(176, 216, 237);
+    border: none;
+    border-radius: 25px;
+    transition: all ease-in-out 0.3s;
+    color: var(--primary-color);
 }
 
 .image img {
@@ -31,10 +20,11 @@ body {
   cursor: pointer;
 }
 
-.btn {
-  height: 140px;
-  width: 140px;
-  border-radius: 50%;
+.btn-bank {
+    height: 140px;
+    width: 140px;
+    border: none;
+    border-radius: 50%
 }
 
 .profile-bg {
@@ -61,9 +51,9 @@ body {
   align-items: center;
 }
 
-.bank-container .desc h5 {
-  margin-top: 25px;
-  font-size: 20px;
+.bank-container .desc h5{
+    margin-top: 35px;
+    font-size:20px;
 }
 .bank-container .desc p {
   font-size: 14px;

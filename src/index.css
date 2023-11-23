@@ -15,11 +15,17 @@
   --boundary-color: rgb(203, 203, 203);
   color: rgb(42, 53, 71);
   --hover-primary: rgb(75, 123, 255);
+
+  --bg-color: #338EE2;
+  --color: rgb(211, 237, 242);
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
+
 a {
   text-decoration: none;
   /* font-weight: 500; */
