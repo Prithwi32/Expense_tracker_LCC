@@ -4,7 +4,7 @@ import "./profile.css";
 const Profile = () => {
   return (
     <>
-      <div class="col d-flex justify-content-center align-items-center">
+      <div className="col d-flex justify-content-center align-items-center">
         <div className="profileSection">
           {" "}
           <div className="card p-4">

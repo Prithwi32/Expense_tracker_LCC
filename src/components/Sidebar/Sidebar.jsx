@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <div className="websiteNameAndLogo">
         <FcCurrencyExchange size="3vw" />
-        <h2>Money Manager</h2>
+        <h2 id="appName">Money Manager</h2>
       </div>
       <div className="profileArea">
         <img src={profile} alt="" />

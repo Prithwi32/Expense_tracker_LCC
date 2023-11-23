@@ -156,9 +156,9 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="head m-primary">
         <div className="heading">
-          <h1>Dashboard</h1>
+          <h1 id="dashboardHeading">Dashboard</h1>
         </div>
-        <button>+ New Transaction</button>
+        <button className="newTrans-btn">+ New Transaction</button>
       </div>
 
       <div className="dashboardInfo ">
@@ -166,20 +166,20 @@ const Dashboard = () => {
           <div className="bar-overview">
             <div className="overview ">
               <div className="income overviewInfo">
-                <h2>$ 400.00</h2>
-                <p>Income</p>
+                <h2 className="overviewHeading">$ 400.00</h2>
+                <p className="overviewPara">Income</p>
               </div>
               <div className="expenses overviewInfo">
-                <h2>$ 200.00</h2>
-                <p>Expenses</p>
+                <h2 className="overviewHeading">$ 200.00</h2>
+                <p className="overviewPara">Expenses</p>
               </div>
               <div className="balance overviewInfo">
-                <h2>$ 200.00</h2>
-                <p>Balance</p>
+                <h2 className="overviewHeading">$ 200.00</h2>
+                <p className="overviewPara">Balance</p>
               </div>
               <div className="totalT overviewInfo">
-                <h2>142</h2>
-                <p>Total Transactions</p>
+                <h2 className="overviewHeading">142</h2>
+                <p className="overviewPara">Total Transactions</p>
               </div>
             </div>
             <div className="barChart m-primary">
@@ -212,7 +212,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="latestTransactions-section">
-            <h3>Latest Transactions</h3>
+            <h3 id="latestTrans-heading">Latest Transactions</h3>
             <div className="latestTransactions">
               <div className="trans">
                 <div className="transactionInfo">
@@ -310,7 +310,7 @@ const Dashboard = () => {
         <div className="graphs">
           <div className="pieChart">
             <div id="pieChart1">
-              <h5>Monthly Income</h5>
+              <h5 className="pieHeading">Monthly Income</h5>
               <PieChart width={220} height={190}>
                 <Pie
                   data={data02}
@@ -326,7 +326,7 @@ const Dashboard = () => {
               </PieChart>
             </div>
             <div id="pieChart2">
-              <h5>Monthly Income</h5>
+              <h5 className="pieHeading">Monthly Income</h5>
               <PieChart width={220} height={190}>
                 <Pie
                   data={data02}
@@ -342,7 +342,7 @@ const Dashboard = () => {
               </PieChart>
             </div>
             <div id="pieChart3">
-              <h5>Monthly Income</h5>
+              <h5 className="pieHeading">Monthly Income</h5>
               <PieChart width={220} height={190}>
                 <Pie
                   data={data02}
@@ -358,41 +358,42 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="areaGraph">
-            <AreaChart
-              width={520}
-              height={250}
-              data={data02}
-              margin={{ top: 30, right: 30, left: 0, bottom: 0 }}
-            >
-              <defs>
-                <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-                </linearGradient>
-                <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-                  <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
-                </linearGradient>
-              </defs>
-              <XAxis dataKey="name" />
-              <YAxis />
-              <CartesianGrid strokeDasharray="3 3" />
-              <Tooltip />
-              <Area
-                type="monotone"
-                dataKey="Income"
-                stroke="var(--primary-color)"
-                fillOpacity={1}
-                fill="#5d88ff35"
-              />
-              <Area
-                type="monotone"
-                dataKey="Expense"
-                stroke="var(--secondary-color)"
-                fillOpacity={1}
-                fill=" #49bfff35"
-              />
-            </AreaChart>
+            <ResponsiveContainer>
+              <AreaChart
+                // height="12vw"
+                data={data02}
+                margin={{ top: 30, right: 30, left: 0, bottom: 0 }}
+              >
+                <defs>
+                  <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
+                  </linearGradient>
+                  <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
+                    <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
+                  </linearGradient>
+                </defs>
+                <XAxis dataKey="name" />
+                <YAxis />
+                <CartesianGrid strokeDasharray="3 3" />
+                <Tooltip />
+                <Area
+                  type="monotone"
+                  dataKey="Income"
+                  stroke="var(--primary-color)"
+                  fillOpacity={1}
+                  fill="#5d88ff35"
+                />
+                <Area
+                  type="monotone"
+                  dataKey="Expense"
+                  stroke="var(--secondary-color)"
+                  fillOpacity={1}
+                  fill=" #49bfff35"
+                />
+              </AreaChart>
+            </ResponsiveContainer>
           </div>
         </div>
       </div>

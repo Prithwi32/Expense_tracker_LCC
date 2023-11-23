@@ -12,12 +12,12 @@
 }
 
 .image img {
-    transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 
-.image img:hover{
-    transform: scale(1.2);
-    cursor: pointer;
+.image img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .btn-bank {
@@ -27,66 +27,66 @@
     border-radius: 50%
 }
 
-.profile-bg{
-    background-color:var(--bg-color);
+.profile-bg {
+  background-color: var(--bg-color);
 }
 
 .name {
-    font-size: 26px;
-    font-weight: bold
+  font-size: 26px;
+  font-weight: bold;
 }
 
 .email-id {
-    font-size: 20px;
-    font-weight: 600
+  font-size: 20px;
+  font-weight: 600;
 }
-.bank-container{
-    width: 28vw;
-    height: 18vh;
-    background-color:var(--bg-color);
-    border: none;
-    border-radius: 18px;
-    text-align: center;
-    color: var(--color);
-    align-items: center;
+.bank-container {
+  width: 28vw;
+  height: 18vh;
+  background-color: var(--bg-color);
+  border: none;
+  border-radius: 18px;
+  text-align: center;
+  color: var(--color);
+  align-items: center;
 }
 
 .bank-container .desc h5{
     margin-top: 35px;
     font-size:20px;
 }
-.bank-container .desc p{
-    font-size: 14px;
+.bank-container .desc p {
+  font-size: 14px;
 }
 .btn1 {
-    height: 40px;
-    width: 150px;
-    border: none;
-    border-radius: 12px;
-    background-color:var(--bg-color);
-    color: var(--color);
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 12px;
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
 }
-.btn1:hover{
-    cursor:pointer;
-    transform: scale(1.1);
-    color: rgb(208, 237, 160);
+.btn1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgb(208, 237, 160);
 }
-.btn-space{
-    margin-right: 18px;
+.btn-space {
+  margin-right: 18px;
 }
 .join {
-    padding: 15px;
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    background-color: var(--bg-color);
-    font-size: 16px;
-    color: var(--color);
-    font-weight: bold;
-    border-radius: 0 0 25px 25px;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  background-color: var(--bg-color);
+  font-size: 16px;
+  color: var(--color);
+  font-weight: bold;
+  border-radius: 0 0 25px 25px;
 }
